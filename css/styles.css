@@ -160,3 +160,9 @@ footer .social {
   justify-content: space-evenly;
   gap: 1.375rem;
 }
+
+@media only screen and (max-width: 768px) {
+  nav .logo {
+    display: none;
+  }
+}
