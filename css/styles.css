@@ -64,8 +64,8 @@ transferred per https:github.com/echeno/adobe-font-extractor */
   }
 
   /* typography */
-  --body-font-family: "Gill Sans, sans serif";
-  --title-font-family: "Proxima Nova Extra Condensed Thin, sans serif";
+  --body-font-family: "Gill Sans, sans-serif";
+  --title-font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
 }
 
 body {
