@@ -1,0 +1,87 @@
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  skip setting html and body height for now
+  my portfolio site is responsive and works fine without these set
+*/
+
+:root {
+  --brand-primary: #79addc;
+  --brand-dark: #000;
+  --brand-light: #fff;
+
+  --font-dark: var(--brand-dark);
+  --font-light: var(--brand-light);
+
+  /* fonts */
+
+  /* Regular, weight: 400 */
+  @font-face {
+    font-family: "Gill Sans";
+    src: url(fonts/gill-sans.otf) format("otf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* 700 bold */
+  @font-face {
+    font-family: "Gill Sans";
+    src: url(fonts/gill-sans.otf) format("otf");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* italic */
+  @font-face {
+    font-family: "Gill Sans";
+    src: url(fonts/gill-sans-italic.otf) format("otf");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* light */
+  @font-face {
+    font-family: "Gill Sans";
+    src: url(fonts/gill-sans-light.otf) format("otf");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  /* downloaded via Adobe CC
+transferred per https:github.com/echeno/adobe-font-extractor */
+  @font-face {
+    font-family: "Proxima Nova Extra Condensed Thin";
+    src: url(fonts/proxima-nova-extra-condensed-thin.otf) format("otf");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  /* typography */
+  --body-font-family: "Gill Sans, sans serif";
+  --title-font-family: "Proxima Nova Extra Condensed Thin, sans serif";
+}
+
+body {
+  font-family: var(--body-font-family);
+}
+
+/* font sizes may need to be reduced on mobile */
+h1 {
+  /* 60px */
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  font-family: var(--title-font-family);
+}
+
+h2 {
+  font-size: 2.188rem;
+  text-transform: uppercase;
+  font-family: var(--title-font-family);
+}
