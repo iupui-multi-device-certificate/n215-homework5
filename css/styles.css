@@ -129,7 +129,9 @@ nav .links a {
   color: #000;
 }
 
+/* TODO: fix gap */
 .quote {
+  width: 45%;
   display: grid;
   grid-template-columns: 260px 1fr;
   grid-template-rows: 1fr 1fr;
