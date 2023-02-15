@@ -129,6 +129,28 @@ nav .links a {
   color: #000;
 }
 
+.quote {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "client-image quote-text"
+    "client-image quote-author";
+  gap: 1.375rem;
+}
+
+.client-image {
+  grid-area: client-image;
+}
+
+.quote-text {
+  grid-area: quote-text;
+}
+
+.quote-author {
+  grid-area: quote-author;
+}
+
 footer {
   background-color: #79addc;
   height: auto;
@@ -164,6 +186,10 @@ footer .social {
 @media only screen and (max-width: 768px) {
   nav .logo {
     display: none;
+  }
+
+  nav .links {
+    justify-content: center;
   }
 
   footer .copyright {
