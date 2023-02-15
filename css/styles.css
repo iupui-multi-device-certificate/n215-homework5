@@ -132,7 +132,7 @@ nav .links a {
 .quote {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "client-image quote-text"
     "client-image quote-author";
