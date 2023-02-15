@@ -139,6 +139,8 @@ nav .links a {
     "client-image quote-text"
     "client-image quote-author";
   gap: 1.375rem;
+
+  align-items: center;
 }
 
 .client-image {
