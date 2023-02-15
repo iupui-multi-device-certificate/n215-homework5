@@ -70,12 +70,19 @@ transferred per https:github.com/echeno/adobe-font-extractor */
 
 body {
   font-family: var(--body-font-family);
+  /* base font size */
+  font-size: 1rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight: normal;
 }
 
 /* font sizes may need to be reduced on mobile */
 h1 {
   /* 60px */
-  font-size: 3.75rem;
+  /* font-size: 3.75rem; */
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-family: var(--title-font-family);
 }
