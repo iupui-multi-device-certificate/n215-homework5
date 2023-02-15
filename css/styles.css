@@ -134,6 +134,9 @@ footer {
   background-color: #79addc;
   height: auto;
   width: 100%;
+
+  padding: 0 9.375rem;
+  margin-top: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,7 +150,7 @@ footer .logo {
 }
 
 footer .copyright {
-  font-size: 12px;
+  font-size: 0.75;
   color: #ffffff;
 }
 
