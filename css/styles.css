@@ -137,7 +137,7 @@ nav .links a {
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "client-image quote-text"
-    "client-image quote-author";
+    "client-image quote-text";
   /* gap: 1.375rem; */
   gap: 1.25rem;
 
@@ -153,7 +153,7 @@ nav .links a {
 }
 
 .quote-author {
-  grid-area: quote-author;
+  /* grid-area: quote-author; */
   text-align: right;
 }
 
