@@ -1,0 +1,31 @@
+/*  from bootstrap */
+/* prevents overlap issue have w/ fixed */
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  height: 90px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    font-size: 1.25rem;
+    color: #000;
+    padding-top: 30px;
+    border: solid thin;
+  }
+  .links {
+    color: #79addc;
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #000;
+    }
+  }
+}

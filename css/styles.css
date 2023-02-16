@@ -11,65 +11,39 @@
   skip setting html and body height for now
   my portfolio site is responsive and works fine without these set
 */
-
-:root {
-  --brand-primary: #79addc;
-  --brand-dark: #000;
-  --brand-light: #fff;
-
-  --font-dark: var(--brand-dark);
-  --font-light: var(--brand-light);
-
-  /* fonts */
-
-  /* Regular, weight: 400 */
-  @font-face {
-    font-family: "Gill Sans";
-    src: url(fonts/gill-sans.otf) format("otf");
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  /* 700 bold */
-  @font-face {
-    font-family: "Gill Sans";
-    src: url(fonts/gill-sans.otf) format("otf");
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  /* italic */
-  @font-face {
-    font-family: "Gill Sans";
-    src: url(fonts/gill-sans-italic.otf) format("otf");
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  /* light */
-  @font-face {
-    font-family: "Gill Sans";
-    src: url(fonts/gill-sans-light.otf) format("otf");
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  /* downloaded via Adobe CC
-transferred per https:github.com/echeno/adobe-font-extractor */
-  @font-face {
-    font-family: "Proxima Nova Extra Condensed Thin";
-    src: url(fonts/proxima-nova-extra-condensed-thin.otf) format("otf");
-    font-weight: 100;
-    font-style: normal;
-  }
-
-  /* typography */
-  --body-font-family: "Gill Sans, sans-serif";
-  --title-font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans.otf) format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-italic.otf) format("otf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-light.otf) format("otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Extra Condensed Thin";
+  src: url(fonts/proxima-nova-extra-condensed-thin.otf) format("otf");
+  font-weight: 100;
+  font-style: normal;
+}
+/* typography */
 body {
-  font-family: var(--body-font-family);
+  font-family: "Gill Sans, sans-serif";
   /* base font size */
   font-size: 1rem;
 }
@@ -81,25 +55,22 @@ body {
 /* TODO: partial underline on header tags */
 /* font sizes may need to be reduced on mobile */
 h1 {
-  /* 60px */
-  /* font-size: 3.75rem; */
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-family: var(--title-font-family);
+  font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
   margin-bottom: 2.375rem;
 }
 
 h2 {
   font-size: 2.188rem;
   text-transform: uppercase;
-  font-family: var(--title-font-family);
+  font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
   margin-bottom: 2.375rem;
 }
 
 .container {
   margin: 0 auto;
   width: 80%;
-
   min-height: 100%;
   /* min-height: 100vh; */
 }
@@ -107,16 +78,12 @@ h2 {
 /*  from bootstrap */
 /* prevents overlap issue have w/ fixed */
 .sticky-top {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
 }
 
 nav {
-  /* position: fixed;
-  left: 0;
-  right: 0; */
   margin-left: auto;
   margin-right: auto;
   height: 90px;
@@ -140,6 +107,38 @@ nav .links a {
   color: #000;
 }
 
+/* TODO: fix extra white space below footer on larger screens, e.g. 27" */
+footer {
+  background-color: #79addc;
+  height: auto;
+}
+footer .footer-content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .logo {
+  font-size: 1.25rem;
+  color: #fff;
+  padding-top: 30px;
+  border: solid thin;
+}
+footer .copyright {
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.375rem;
+}
+
+/* using bootstrap breakpoints
+https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
+/* could be refactored to use a hamburger menu instead */
 .about-text {
   margin-bottom: 6rem;
 }
@@ -149,11 +148,8 @@ nav .links a {
   display: grid;
   grid-template-columns: 260px 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "client-image quote-text"
-    "client-image quote-text";
+  grid-template-areas: "client-image quote-text" "client-image quote-text";
   gap: 1.375rem;
-  /* gap only affects the distance b/n cols - saw this in Kevin Powell video, but forgot which one*/
   padding-bottom: 2.25rem;
 }
 
@@ -164,7 +160,6 @@ nav .links a {
 .quote-text {
   grid-area: quote-text;
 }
-
 .quote-text blockquote p {
   padding-bottom: 1.25rem;
   font-style: italic;
@@ -175,72 +170,28 @@ nav .links a {
   color: var(--brand-primary);
 }
 
-/* TODO: fix extra white space below footer on larger screens, e.g. 27" */
-
-footer {
-  background-color: #79addc;
-  height: auto;
-}
-
-footer .footer-content {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer .logo {
-  font-size: 1.25rem;
-  color: #fff;
-  padding-top: 30px;
-  border: solid thin;
-}
-
-footer .copyright {
-  font-size: 0.75rem;
-  color: #ffffff;
-}
-
-footer .social {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 1.375rem;
-}
-
-/* using bootstrap breakpoints
-https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 @media only screen and (max-width: 768px) {
-  /* could be refactored to use a hamburger menu instead */
   nav {
     text-align: center;
   }
   nav .logo {
     display: none;
   }
-
   nav .links {
     justify-content: center;
   }
-
   footer .copyright {
     display: none;
   }
 }
-
 @media only screen and (max-width: 1280px) {
   .quote {
     width: 100%;
     grid-template-columns: 260px;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "client-image"
-      "quote-text";
-    /* Not sure why more space under image on Firefox, but looks good in Chrome */
+    grid-template-areas: "client-image" "quote-text";
     gap: 0.5rem;
     padding-bottom: 0.5rem;
-
     justify-content: center;
   }
-} ;
+}
