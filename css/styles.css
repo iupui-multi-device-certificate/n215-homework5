@@ -191,6 +191,8 @@ footer .social {
   gap: 1.375rem;
 }
 
+/* using bootstrap breakpoints
+https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 @media only screen and (max-width: 768px) {
   nav .logo {
     display: none;
@@ -204,3 +206,17 @@ footer .social {
     display: none;
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .quote {
+    width: 100%;
+    grid-template-columns: 260px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "client-image"
+      "quote-text";
+    /* Not sure why more space under image on Firefox, but looks good in Chrome */
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+} ;
