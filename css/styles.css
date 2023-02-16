@@ -129,7 +129,6 @@ nav .links a {
   color: #000;
 }
 
-/* TODO: fix gap */
 .quote {
   width: 45%;
   display: grid;
@@ -153,6 +152,7 @@ nav .links a {
 
 .quote-text blockquote p {
   padding-bottom: 1.25rem;
+  font-style: italic;
 }
 
 .quote-author {
