@@ -152,6 +152,10 @@ nav .links a {
   grid-area: quote-text;
 }
 
+.quote-text blockquote p {
+  padding-bottom: 1.25rem;
+}
+
 .quote-author {
   /* grid-area: quote-author; */
   text-align: right;
