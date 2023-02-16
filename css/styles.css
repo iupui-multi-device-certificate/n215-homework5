@@ -141,7 +141,7 @@ nav .links a {
   /* gap: 1.375rem; */
   gap: 1.25rem;
 
-  align-items: center;
+  /* align-items: center; */
 }
 
 .client-image {
