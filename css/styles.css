@@ -157,6 +157,7 @@ nav .links a {
 
 .quote-author {
   text-align: right;
+  color: var(--brand-primary);
 }
 
 footer {
