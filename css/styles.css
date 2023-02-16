@@ -234,5 +234,7 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
     /* Not sure why more space under image on Firefox, but looks good in Chrome */
     gap: 0.5rem;
     padding-bottom: 0.5rem;
+
+    justify-content: center;
   }
 } ;
