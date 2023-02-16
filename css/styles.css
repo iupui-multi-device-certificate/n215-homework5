@@ -138,10 +138,9 @@ nav .links a {
   grid-template-areas:
     "client-image quote-text"
     "client-image quote-text";
-  /* gap: 1.375rem; */
-  gap: 1.25rem;
-
-  /* align-items: center; */
+  gap: 1.375rem;
+  /* gap only affects the distance b/n cols */
+  padding-bottom: 2.25rem;
 }
 
 .client-image {
@@ -150,7 +149,6 @@ nav .links a {
 
 .quote-text {
   grid-area: quote-text;
-  padding-bottom: 2.25rem;
 }
 
 .quote-text blockquote p {
@@ -158,7 +156,6 @@ nav .links a {
 }
 
 .quote-author {
-  /* grid-area: quote-author; */
   text-align: right;
 }
 
