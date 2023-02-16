@@ -131,6 +131,10 @@ nav .links a {
   color: #000;
 }
 
+.about-text {
+  margin-bottom: 6rem;
+}
+
 .quote {
   width: 45%;
   display: grid;
