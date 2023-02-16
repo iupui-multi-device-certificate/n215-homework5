@@ -8,7 +8,11 @@ body {
   font-weight: normal;
 }
 
-/* TODO: partial underline on header tags */
+/* 
+  TODO: partial underline on header tags
+  Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
+
+*/
 /* font sizes may need to be reduced on mobile */
 h1 {
   font-size: 3.5rem;
