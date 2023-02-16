@@ -210,6 +210,10 @@ footer .social {
 /* using bootstrap breakpoints
 https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 @media only screen and (max-width: 768px) {
+  /* could be refactored to use a hamburger menu instead */
+  nav {
+    text-align: center;
+  }
   nav .logo {
     display: none;
   }
