@@ -139,7 +139,7 @@ nav .links a {
     "client-image quote-text"
     "client-image quote-text";
   gap: 1.375rem;
-  /* gap only affects the distance b/n cols */
+  /* gap only affects the distance b/n cols - saw this in Kevin Powell video, but forgot which one*/
   padding-bottom: 2.25rem;
 }
 
