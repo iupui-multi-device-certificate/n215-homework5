@@ -150,6 +150,7 @@ nav .links a {
 
 .quote-text {
   grid-area: quote-text;
+  padding-bottom: 2.25rem;
 }
 
 .quote-text blockquote p {
